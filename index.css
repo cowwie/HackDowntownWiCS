@@ -1,0 +1,187 @@
+html {
+    /* makes the clicking of something in the navbar smooth */
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    background-color: floralwhite;
+    display: block;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 100vh;
+}
+
+#mlh-trust-badge {
+    display: block;
+    max-width: 100px; /* Maximum width of the badge */
+    position: fixed; /* Fixes the badge at a specific position on the page */
+    right: 10%; /* Distance from the right edge of the page */
+    top: 0px; /* Distance from the top of the page */
+    z-index: 10000; /* Ensures the badge stays on top of other content */
+}
+
+#mlh-trust-badge img {
+    width: 100%; /* Ensures the image fills the container proportionally */
+}
+
+.redbike {
+    width: 27%;
+    position: absolute;
+    top: 10%; /* Distance from the top */
+    left: 10px; /* Distance from the right */
+    height: auto;
+    margin-top: 5%;
+    animation: tiltAnimation 1s infinite alternate;
+}
+
+.metro {
+    width: 27%;
+    position: absolute;
+    top: 13%; /* Distance from the top */
+    right: 10px; /* Distance from the right */
+    height: auto;
+    margin-top: 5%;
+    animation: glitchEffect 3s infinite;
+}
+
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 4%;
+    color: white;  /* White text */
+    padding: 10px 20px;
+    z-index: 10;
+}
+
+.navbar-items {
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3%;
+    font-size: 130%;
+}
+
+.navbar-link {
+    color: black;
+    text-decoration: none;
+    font-size: 90%;
+    font-weight: bold;
+    transition: color 0.3s ease;
+    font-family: Bahnschrift;
+}
+
+.navbar-link:hover {
+    color: #f0a500;  /* Hover effect for links */
+}
+
+/* Smooth swaying effect */
+@keyframes tiltAnimation {
+    0% {
+        transform: rotate(15deg);
+    }
+    100% {
+        transform: rotate(-15deg);
+    }
+}
+
+/* Glitchy swaying effect */
+@keyframes glitchEffect {
+    0% {
+        transform: translateX(0) translateY(0) rotate(0deg); /* Start at the original position */
+    }
+    10% {
+        transform: translateX(10px) translateY(0) rotate(5deg); /* Move right */
+    }
+    20% {
+        transform: translateX(0) translateY(5px) rotate(-5deg); /* Move down */
+    }
+    30% {
+        transform: translateX(-10px) translateY(0) rotate(3deg); /* Move left */
+    }
+    40% {
+        transform: translateX(0) translateY(-10px) rotate(0deg); /* Move up */
+    }
+    50% {
+        transform: translateX(15px) translateY(0) rotate(2deg); /* Move right */
+    }
+    60% {
+        transform: translateX(0) translateY(10px) rotate(4deg); /* Move down */
+    }
+    70% {
+        transform: translateX(-15px) translateY(0) rotate(-5deg); /* Move left */
+    }
+    80% {
+        transform: translateX(0) translateY(-15px) rotate(3deg); /* Move up */
+    }
+    90% {
+        transform: translateX(5px) translateY(0) rotate(2deg); /* Move right */
+    }
+    100% {
+        transform: translateX(0) translateY(0) rotate(0deg); /* Reset to the original position */
+    }
+}
+
+.wicspresents {
+    width: 35%; /* Force this rule to apply */
+    height: auto; /* Maintain aspect ratio */
+}
+
+.titlecollage {
+    width: 50%; /* Force this rule to apply */
+    height: auto; /* Maintain aspect ratio */
+}
+
+.landing-page {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin-top: 10%;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.countdown-timer {
+    font-family: "Comic Sans MS", cursive, sans-serif; /* Simple and cute font */
+    font-size: 180%;
+    text-align: center;
+    margin-top: 20px;
+    display: block;
+    justify-content: center;
+    align-items: center;
+}
+
+#timer {
+    font-size: 2rem;
+    color: black; /* Red text for visibility */
+    display: block;
+    font-weight: bold;
+    color: #ee6151;
+}
+
+.about-section {
+    margin: 60px 10%; /* Adds space on the top and left, adjusts overall left alignment */
+    padding: 20px;
+    max-width: 500px; /* Keeps the content readable on larger screens */
+    background-color: white; /* Light background for the About section */
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Soft shadow */
+    text-align: left; /* Ensures the text aligns to the left */
+    font-size: 1.1rem;
+}
+
+.about-section h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.about-section p {
+    line-height: 1.6;
+    color: #555;
+}
