@@ -2,7 +2,7 @@ html {
     /* makes the clicking of something in the navbar smooth */
     scroll-behavior: smooth;
 }
-
+/*comment to see if git push works!*/
 body {
     margin: 0;
     background-color: floralwhite;
