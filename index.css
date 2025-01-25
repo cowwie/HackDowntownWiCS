@@ -11,13 +11,15 @@ body {
     align-items: center;
     text-align: center;
     height: 100vh;
+    font-family: Bahnschrift;
 }
 
 #mlh-trust-badge {
     display: block;
+    width: 10%;
     max-width: 100px; /* Maximum width of the badge */
     position: fixed; /* Fixes the badge at a specific position on the page */
-    right: 10%; /* Distance from the right edge of the page */
+    right: 17%; /* Distance from the right edge of the page */
     top: 0px; /* Distance from the top of the page */
     z-index: 10000; /* Ensures the badge stays on top of other content */
 }
@@ -54,10 +56,14 @@ body {
     height: 4%;
     color: white;  /* White text */
     padding: 10px 20px;
+    margin-bottom: 0px;
     z-index: 10;
+    background-color: floralwhite;
+    box-shadow: 0px 8px 10px rgba(0, 0, 0, 0.1); /* Adjust opacity for intensity */
 }
 
 .navbar-items {
+    padding-top: 10px;
     color: white;
     display: flex;
     justify-content: center;
@@ -147,8 +153,7 @@ body {
 }
 
 .countdown-timer {
-    font-family: "Comic Sans MS", cursive, sans-serif; /* Simple and cute font */
-    font-size: 180%;
+    font-size: 300%;
     text-align: center;
     margin-top: 20px;
     display: block;
@@ -157,22 +162,11 @@ body {
 }
 
 #timer {
-    font-size: 2rem;
+    font-size: 3rem;
     color: black; /* Red text for visibility */
     display: block;
     font-weight: bold;
     color: #ee6151;
-}
-
-.about-section {
-    margin: 60px 10%; /* Adds space on the top and left, adjusts overall left alignment */
-    padding: 20px;
-    max-width: 500px; /* Keeps the content readable on larger screens */
-    background-color: white; /* Light background for the About section */
-    border-radius: 8px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Soft shadow */
-    text-align: left; /* Ensures the text aligns to the left */
-    font-size: 1.1rem;
 }
 
 .about-section h2 {
@@ -326,4 +320,115 @@ p {
     display: block;
     margin-left: auto;
     margin-right: auto;
+}
+
+.pastSponsorsTitle {
+    width: 40%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    max-width: 500px;
+    min-width: 350px;
+}
+
+.sponsors {
+    display: block;
+    text-align: center;
+}
+
+.pastSponsorsList {
+    width: 80%;
+    height: auto;
+    max-width: 850px;
+}
+
+#about {
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+    padding: 70px;
+    padding-top: 0px;
+}
+
+.about-title {
+    display: block;
+    width: 40%;
+    max-width: 400px;
+    margin-top: 30px;
+    height: auto;
+    margin-bottom: -10%;
+}
+
+.about-sections {
+    display: flex;
+    justify-content: space-between; /* Aligns sections side by side */
+    gap: 20px; /* Adds space between the sections */
+    flex-wrap: wrap; /* Allows sections to stack on smaller screens */
+    padding: 50px;
+}
+
+.wicshackssection, .wicsatUVA {
+    flex: 1 1 calc(50% - 20px); /* Use available space minus the gap */
+    max-width: calc(50% - 20px);
+    box-sizing: border-box;
+    text-align: left;
+    padding: 20px; /* Removes extra padding */
+    text-size-adjust: 60%;
+
+}
+
+.wicshackssection img, .wicsatUVA img {
+    display: block;
+    max-width: 100%; /* Ensure the image fits within the container */
+    height: auto;
+    margin-bottom: 0px; /* Reduced spacing below the subheadings */
+}
+
+.wicshackssection p, .wicsatUVA p {
+    margin-top: -10%; /* Adds a small gap between heading and text */
+    line-height: 1.5; /* Improves readability */
+    font-size: 110%;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .about-sections {
+        flex-direction: column; /* Stacks sections vertically */
+        gap: 40px; /* Increases spacing between stacked sections */
+    }
+
+    .wicshackssection, .wicsatUVA {
+        max-width: 100%; /* Sections take full width */
+    }
+}
+
+.twosections {
+    display: flex;
+    top-margin: 0px;
+}
+
+.BIGaboutsection {
+    <!-- background-color: #c4a358; -->
+}
+
+.banner {
+    position: fixed;
+    top: 0px;
+    right: 5%;
+    width: 10%; /* Reduced width */
+    max-width: 90px;
+    height: 150px; /* Reduced height */
+    background-color: #8d0b00; /* Matches the green shade */
+    z-index: 9999;
+    text-align: center;
+    color: white;
+    font-weight: bold;
+    padding-top: 30px; /* Center the text */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.banner:hover {
+    background-color: #be0f00; /* Hover color */
 }
