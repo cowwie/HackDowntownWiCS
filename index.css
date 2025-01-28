@@ -210,7 +210,24 @@ body {
     display: block;
     object-fit: cover; /* Crop excess area if needed */
 }
-
+.join-buttons {
+    position: absolute;
+    left:30%;
+}
+button.discord-devpost {
+    background: #A3A3FF;
+    font-family: Bahnschrift;
+    width: 150px;
+    height: 50px;
+    font-size:20px;
+    color: white;
+    border-radius: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border: none;
+}
 button.prev, button.next {
     position: absolute;
     top: 50%;
