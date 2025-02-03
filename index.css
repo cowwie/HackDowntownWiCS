@@ -422,26 +422,25 @@ p {
     <!-- background-color: #c4a358; -->
 }
 
-.banner {
+.register-bookmark {
     position: fixed;
-    top: 0px;
+    top: -200px; /* Start position above the viewport */
     right: 5%;
-    width: 10%; /* Reduced width */
-    max-width: 90px;
-    height: 150px; /* Reduced height */
-    background-color: #8d0b00; /* Matches the green shade */
-    z-index: 9999;
-    text-align: center;
-    color: white;
-    font-weight: bold;
-    padding-top: 30px; /* Center the text */
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    width: 20%;
+    max-width: 100px;
+    height: auto;
     cursor: pointer;
-    transition: background-color 0.3s ease, transform 0.2s ease;
+    z-index: 9999; /* Ensures it's above everything */
+    animation: drop-in 0.6s cubic-bezier(0.25, 1, 0.5, 1) forwards;
 }
 
-.banner:hover {
-    background-color: #be0f00; /* Hover color */
+@keyframes drop-in {
+    from {
+        top: -100px;
+    }
+    to {
+        top: 0px;
+    }
 }
 
 .join-buttons img {
@@ -468,6 +467,8 @@ p {
 .register-section h1 {
     text-align: center;
     width: 100%;
+    font-size: xxx-large;
+    margin-bottom: -30px;
 }
 
 .join-buttons {
@@ -477,4 +478,20 @@ p {
     gap: 20px; /* Adds space between images */
     flex-wrap: wrap; /* Ensures responsiveness */
     width: 100%;
+}
+
+.faq-items summary {
+    font-size: x-large;
+}
+
+.faq-items p {
+    font-size: large;
+}
+
+.bottom_Heading {
+    bottom: 0;        /* Positions it at the very bottom */
+    left: 0;          /* Aligns it to the left */
+    width: 100%;      /* Ensures it stretches across the screen */
+    height: auto;
+    margin-bottom: 0px;
 }
