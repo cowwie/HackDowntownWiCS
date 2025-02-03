@@ -211,8 +211,11 @@ body {
     object-fit: cover; /* Crop excess area if needed */
 }
 .join-buttons {
-    position: absolute;
-    left:30%;
+    display: flex; /* Enables flexbox */
+    justify-content: center; /* Centers items horizontally */
+    align-items: center; /* Centers items vertically */
+    gap: 20px; /* Adds space between images */
+    margin-top: 20px;
 }
 button.discord-devpost {
     background: #A3A3FF;
@@ -339,21 +342,12 @@ p {
     margin-right: auto;
 }
 
-.pastSponsorsTitle {
-    width: 40%;
-    height: auto;
-    display: block;
-    margin: 0 auto;
-    max-width: 500px;
-    min-width: 350px;
-}
-
 .sponsors {
     display: block;
     text-align: center;
 }
 
-.pastSponsorsList {
+.SponsorsList {
     width: 80%;
     height: auto;
     max-width: 850px;
@@ -448,4 +442,39 @@ p {
 
 .banner:hover {
     background-color: #be0f00; /* Hover color */
+}
+
+.join-buttons img {
+    max-width: 300px; /* Set max size */
+    width: 300%; /* Ensures responsiveness */
+    height: auto;
+    transition: transform 0.2s ease-in-out;
+    margin-bottom: -70px;
+}
+
+.join-buttons img:hover {
+    transform: scale(1.1); /* Slight zoom effect on hover */
+}
+
+.register-section {
+    text-align: center; /* Centers the heading */
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Ensures all children are centered */
+    justify-content: center;
+    width: 100%;
+}
+
+.register-section h1 {
+    text-align: center;
+    width: 100%;
+}
+
+.join-buttons {
+    display: flex;
+    justify-content: center; /* Centers images horizontally */
+    align-items: center;
+    gap: 20px; /* Adds space between images */
+    flex-wrap: wrap; /* Ensures responsiveness */
+    width: 100%;
 }
