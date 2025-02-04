@@ -346,6 +346,10 @@ p {
     display: block;
     text-align: center;
 }
+.schedule{
+    margin-top: 100px;
+}
+
 
 .SponsorsList {
     width: 80%;
@@ -494,4 +498,7 @@ p {
     width: 100%;      /* Ensures it stretches across the screen */
     height: auto;
     margin-bottom: 0px;
+}
+img{
+    margin: 10px;
 }
