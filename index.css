@@ -374,7 +374,7 @@ p {
 .SponsorsList {
     width: 80%;
     height: auto;
-    max-width: 850px;
+    max-width: 900px;
 }
 
 #about {
@@ -519,6 +519,9 @@ p {
     height: auto;
     margin-bottom: 0px;
 }
-img{
-    margin: 10px;
+
+.sponsor_blurb {
+    width: 80%;
+    height: auto;
+    max-width: 900px;
 }
