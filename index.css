@@ -351,6 +351,26 @@ p {
 }
 
 
+
+#prize-container {
+    display:table;
+}
+
+.prizes h6 {
+    float:left;
+    justify-content: center;
+    align-items: center;
+    border-sizing: border-box;
+    width:30%;
+    height:100px;
+    background-color:peachpuff;
+    padding:20px;
+    position:relative;
+    text-align:center;
+    margin-left: 120px;
+}
+
+
 .SponsorsList {
     width: 80%;
     height: auto;
