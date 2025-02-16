@@ -11,7 +11,7 @@ body {
     align-items: center;
     text-align: center;
     height: 100vh;
-    font-family: Bahnschrift;
+    font-family: Calibri;
 }
 
 #mlh-trust-badge {
@@ -69,7 +69,7 @@ body {
     justify-content: center;
     align-items: center;
     gap: 3%;
-    font-size: 130%;
+    font-size: 150%;
 }
 
 .navbar-link {
@@ -78,7 +78,7 @@ body {
     font-size: 90%;
     font-weight: bold;
     transition: color 0.3s ease;
-    font-family: Bahnschrift;
+    font-family: Calibri;
 }
 
 .navbar-link:hover {
@@ -512,4 +512,10 @@ p {
     width: 80%;
     height: auto;
     max-width: 900px;
+}
+
+.prizetrackpic {
+    width: 60%;
+    height: auto;
+    max-width: 1000px;
 }
