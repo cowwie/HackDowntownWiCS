@@ -522,7 +522,7 @@ p {
 
 .bottom-nav {
     margin-top: 5%;
-    background-color: #00133e; /* or any color matching your site */
+    background-color: #A88E62; /* or any color matching your site */
     color: white;
     text-align: center;
     padding: 10px 0;
@@ -545,8 +545,9 @@ p {
     padding-bottom: 10px;
     padding-left: 10px;
     padding-right: 10px;
+    transition: color 0.3s ease-in-out; /* Smooth transition */
 }
 
 .bottom-nav-link:hover {
-    text-decoration: underline;
+    color: #002893;
 }
