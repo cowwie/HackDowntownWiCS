@@ -11,7 +11,7 @@ body {
     align-items: center;
     text-align: center;
     height: 100vh;
-    font-family: Calibri;
+    font-family: "Lucida Console", monospace;
 }
 
 #mlh-trust-badge {
@@ -78,7 +78,7 @@ body {
     font-size: 90%;
     font-weight: bold;
     transition: color 0.3s ease;
-    font-family: Calibri;
+    font-family: "Lucida Console", monospace;
 }
 
 .navbar-link:hover {
@@ -219,7 +219,7 @@ body {
 }
 button.discord-devpost {
     background: #A3A3FF;
-    font-family: Bahnschrift;
+    font-family: "Lucida Console", monospace;
     width: 150px;
     height: 50px;
     font-size:20px;
